@@ -1,0 +1,605 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CA09F96138FCDB92F309E216 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2FDC811E95A1F2E5CC76191 /* libPods.a */; };
+		E3997A361B53DDC200888215 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E3997A351B53DDC200888215 /* main.m */; };
+		E3997A3C1B53DDC200888215 /* WIMR.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E3997A3A1B53DDC200888215 /* WIMR.xcdatamodeld */; };
+		E3997A421B53DDC200888215 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3997A401B53DDC200888215 /* Main.storyboard */; };
+		E3997A441B53DDC200888215 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3997A431B53DDC200888215 /* Images.xcassets */; };
+		E3997A471B53DDC200888215 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E3997A451B53DDC200888215 /* LaunchScreen.xib */; };
+		E3997A531B53DDC300888215 /* WIMRTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E3997A521B53DDC300888215 /* WIMRTests.m */; };
+		E3997A611B53E0D100888215 /* AllMembersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3997A601B53E0D100888215 /* AllMembersViewController.m */; };
+		E3997A651B53E0DD00888215 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E3997A641B53E0DD00888215 /* AppDelegate.m */; };
+		E3997A681B53E0F700888215 /* WIMRModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E3997A671B53E0F700888215 /* WIMRModel.m */; };
+		E3997A6B1B53E18200888215 /* Member.m in Sources */ = {isa = PBXBuildFile; fileRef = E3997A6A1B53E18200888215 /* Member.m */; };
+		E3997A721B53EA8500888215 /* WIMRClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E3997A711B53EA8500888215 /* WIMRClient.m */; };
+		E3997A771B53F8FE00888215 /* WIMRJSONResponseSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = E3997A761B53F8FE00888215 /* WIMRJSONResponseSerializer.m */; };
+		E3997A7A1B54030500888215 /* SenatorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3997A791B54030500888215 /* SenatorViewController.m */; };
+		E3997A7D1B54031700888215 /* RepresentativeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3997A7C1B54031700888215 /* RepresentativeViewController.m */; };
+		E3997A801B54160600888215 /* MemberTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E3997A7F1B54160600888215 /* MemberTableViewCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E3997A4D1B53DDC300888215 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E3997A281B53DDC200888215 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E3997A2F1B53DDC200888215;
+			remoteInfo = WIMR;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		970A489F23CF23697CEBD6D2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		E2FDC811E95A1F2E5CC76191 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3997A301B53DDC200888215 /* WIMR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WIMR.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3997A341B53DDC200888215 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3997A351B53DDC200888215 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E3997A3B1B53DDC200888215 /* WIMR.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WIMR.xcdatamodel; sourceTree = "<group>"; };
+		E3997A411B53DDC200888215 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E3997A431B53DDC200888215 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		E3997A461B53DDC200888215 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		E3997A4C1B53DDC300888215 /* WIMRTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WIMRTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3997A511B53DDC300888215 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E3997A521B53DDC300888215 /* WIMRTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WIMRTests.m; sourceTree = "<group>"; };
+		E3997A5F1B53E0D100888215 /* AllMembersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllMembersViewController.h; sourceTree = "<group>"; };
+		E3997A601B53E0D100888215 /* AllMembersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AllMembersViewController.m; sourceTree = "<group>"; };
+		E3997A631B53E0DD00888215 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E3997A641B53E0DD00888215 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E3997A661B53E0F700888215 /* WIMRModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WIMRModel.h; sourceTree = "<group>"; };
+		E3997A671B53E0F700888215 /* WIMRModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WIMRModel.m; sourceTree = "<group>"; };
+		E3997A691B53E18200888215 /* Member.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Member.h; sourceTree = "<group>"; };
+		E3997A6A1B53E18200888215 /* Member.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Member.m; sourceTree = "<group>"; };
+		E3997A701B53EA8500888215 /* WIMRClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WIMRClient.h; sourceTree = "<group>"; };
+		E3997A711B53EA8500888215 /* WIMRClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WIMRClient.m; sourceTree = "<group>"; };
+		E3997A741B53EB3100888215 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		E3997A751B53F8FE00888215 /* WIMRJSONResponseSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WIMRJSONResponseSerializer.h; sourceTree = "<group>"; };
+		E3997A761B53F8FE00888215 /* WIMRJSONResponseSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WIMRJSONResponseSerializer.m; sourceTree = "<group>"; };
+		E3997A781B54030500888215 /* SenatorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SenatorViewController.h; sourceTree = "<group>"; };
+		E3997A791B54030500888215 /* SenatorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SenatorViewController.m; sourceTree = "<group>"; };
+		E3997A7B1B54031700888215 /* RepresentativeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepresentativeViewController.h; sourceTree = "<group>"; };
+		E3997A7C1B54031700888215 /* RepresentativeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RepresentativeViewController.m; sourceTree = "<group>"; };
+		E3997A7E1B54160600888215 /* MemberTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MemberTableViewCell.h; sourceTree = "<group>"; };
+		E3997A7F1B54160600888215 /* MemberTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MemberTableViewCell.m; sourceTree = "<group>"; };
+		ECC02B01AAEA89F1C94A7A64 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E3997A2D1B53DDC200888215 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA09F96138FCDB92F309E216 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3997A491B53DDC300888215 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		71468DE3F645C30BB7D6B642 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				ECC02B01AAEA89F1C94A7A64 /* Pods.debug.xcconfig */,
+				970A489F23CF23697CEBD6D2 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B8EEB1E81C303D66E943D9EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E2FDC811E95A1F2E5CC76191 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E3997A271B53DDC200888215 = {
+			isa = PBXGroup;
+			children = (
+				E3997A321B53DDC200888215 /* WIMR */,
+				E3997A4F1B53DDC300888215 /* WIMRTests */,
+				E3997A311B53DDC200888215 /* Products */,
+				71468DE3F645C30BB7D6B642 /* Pods */,
+				B8EEB1E81C303D66E943D9EF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E3997A311B53DDC200888215 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E3997A301B53DDC200888215 /* WIMR.app */,
+				E3997A4C1B53DDC300888215 /* WIMRTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E3997A321B53DDC200888215 /* WIMR */ = {
+			isa = PBXGroup;
+			children = (
+				E3997A731B53EB1100888215 /* Utility */,
+				E3997A6F1B53EA4E00888215 /* Client */,
+				E3997A621B53E0DD00888215 /* AppDelegate */,
+				E3997A5D1B53E0D100888215 /* Model */,
+				E3997A5E1B53E0D100888215 /* ViewController */,
+				E3997A5C1B53E0B700888215 /* UI */,
+				E3997A3A1B53DDC200888215 /* WIMR.xcdatamodeld */,
+				E3997A331B53DDC200888215 /* Supporting Files */,
+			);
+			path = WIMR;
+			sourceTree = "<group>";
+		};
+		E3997A331B53DDC200888215 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E3997A341B53DDC200888215 /* Info.plist */,
+				E3997A351B53DDC200888215 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E3997A4F1B53DDC300888215 /* WIMRTests */ = {
+			isa = PBXGroup;
+			children = (
+				E3997A521B53DDC300888215 /* WIMRTests.m */,
+				E3997A501B53DDC300888215 /* Supporting Files */,
+			);
+			path = WIMRTests;
+			sourceTree = "<group>";
+		};
+		E3997A501B53DDC300888215 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E3997A511B53DDC300888215 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E3997A5C1B53E0B700888215 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				E3997A401B53DDC200888215 /* Main.storyboard */,
+				E3997A431B53DDC200888215 /* Images.xcassets */,
+				E3997A451B53DDC200888215 /* LaunchScreen.xib */,
+				E3997A7E1B54160600888215 /* MemberTableViewCell.h */,
+				E3997A7F1B54160600888215 /* MemberTableViewCell.m */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		E3997A5D1B53E0D100888215 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E3997A661B53E0F700888215 /* WIMRModel.h */,
+				E3997A671B53E0F700888215 /* WIMRModel.m */,
+				E3997A691B53E18200888215 /* Member.h */,
+				E3997A6A1B53E18200888215 /* Member.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E3997A5E1B53E0D100888215 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E3997A5F1B53E0D100888215 /* AllMembersViewController.h */,
+				E3997A601B53E0D100888215 /* AllMembersViewController.m */,
+				E3997A7B1B54031700888215 /* RepresentativeViewController.h */,
+				E3997A7C1B54031700888215 /* RepresentativeViewController.m */,
+				E3997A781B54030500888215 /* SenatorViewController.h */,
+				E3997A791B54030500888215 /* SenatorViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E3997A621B53E0DD00888215 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				E3997A631B53E0DD00888215 /* AppDelegate.h */,
+				E3997A641B53E0DD00888215 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		E3997A6F1B53EA4E00888215 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				E3997A701B53EA8500888215 /* WIMRClient.h */,
+				E3997A711B53EA8500888215 /* WIMRClient.m */,
+				E3997A751B53F8FE00888215 /* WIMRJSONResponseSerializer.h */,
+				E3997A761B53F8FE00888215 /* WIMRJSONResponseSerializer.m */,
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		E3997A731B53EB1100888215 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				E3997A741B53EB3100888215 /* Constants.h */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E3997A2F1B53DDC200888215 /* WIMR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3997A561B53DDC300888215 /* Build configuration list for PBXNativeTarget "WIMR" */;
+			buildPhases = (
+				575D8D14567C88FD12DB1594 /* Check Pods Manifest.lock */,
+				E3997A2C1B53DDC200888215 /* Sources */,
+				E3997A2D1B53DDC200888215 /* Frameworks */,
+				E3997A2E1B53DDC200888215 /* Resources */,
+				17EDF0B6138EE5F0093FD224 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WIMR;
+			productName = WIMR;
+			productReference = E3997A301B53DDC200888215 /* WIMR.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E3997A4B1B53DDC300888215 /* WIMRTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E3997A591B53DDC300888215 /* Build configuration list for PBXNativeTarget "WIMRTests" */;
+			buildPhases = (
+				E3997A481B53DDC300888215 /* Sources */,
+				E3997A491B53DDC300888215 /* Frameworks */,
+				E3997A4A1B53DDC300888215 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E3997A4E1B53DDC300888215 /* PBXTargetDependency */,
+			);
+			name = WIMRTests;
+			productName = WIMRTests;
+			productReference = E3997A4C1B53DDC300888215 /* WIMRTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E3997A281B53DDC200888215 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Maddy Patel";
+				TargetAttributes = {
+					E3997A2F1B53DDC200888215 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					E3997A4B1B53DDC300888215 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = E3997A2F1B53DDC200888215;
+					};
+				};
+			};
+			buildConfigurationList = E3997A2B1B53DDC200888215 /* Build configuration list for PBXProject "WIMR" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E3997A271B53DDC200888215;
+			productRefGroup = E3997A311B53DDC200888215 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E3997A2F1B53DDC200888215 /* WIMR */,
+				E3997A4B1B53DDC300888215 /* WIMRTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E3997A2E1B53DDC200888215 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3997A421B53DDC200888215 /* Main.storyboard in Resources */,
+				E3997A471B53DDC200888215 /* LaunchScreen.xib in Resources */,
+				E3997A441B53DDC200888215 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3997A4A1B53DDC300888215 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		17EDF0B6138EE5F0093FD224 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		575D8D14567C88FD12DB1594 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E3997A2C1B53DDC200888215 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3997A721B53EA8500888215 /* WIMRClient.m in Sources */,
+				E3997A771B53F8FE00888215 /* WIMRJSONResponseSerializer.m in Sources */,
+				E3997A681B53E0F700888215 /* WIMRModel.m in Sources */,
+				E3997A7D1B54031700888215 /* RepresentativeViewController.m in Sources */,
+				E3997A651B53E0DD00888215 /* AppDelegate.m in Sources */,
+				E3997A801B54160600888215 /* MemberTableViewCell.m in Sources */,
+				E3997A7A1B54030500888215 /* SenatorViewController.m in Sources */,
+				E3997A611B53E0D100888215 /* AllMembersViewController.m in Sources */,
+				E3997A3C1B53DDC200888215 /* WIMR.xcdatamodeld in Sources */,
+				E3997A6B1B53E18200888215 /* Member.m in Sources */,
+				E3997A361B53DDC200888215 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3997A481B53DDC300888215 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3997A531B53DDC300888215 /* WIMRTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E3997A4E1B53DDC300888215 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E3997A2F1B53DDC200888215 /* WIMR */;
+			targetProxy = E3997A4D1B53DDC300888215 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E3997A401B53DDC200888215 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E3997A411B53DDC200888215 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E3997A451B53DDC200888215 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E3997A461B53DDC200888215 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E3997A541B53DDC300888215 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E3997A551B53DDC300888215 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E3997A571B53DDC300888215 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ECC02B01AAEA89F1C94A7A64 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WIMR/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E3997A581B53DDC300888215 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 970A489F23CF23697CEBD6D2 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WIMR/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		E3997A5A1B53DDC300888215 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WIMRTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WIMR.app/WIMR";
+			};
+			name = Debug;
+		};
+		E3997A5B1B53DDC300888215 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = WIMRTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WIMR.app/WIMR";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E3997A2B1B53DDC200888215 /* Build configuration list for PBXProject "WIMR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3997A541B53DDC300888215 /* Debug */,
+				E3997A551B53DDC300888215 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3997A561B53DDC300888215 /* Build configuration list for PBXNativeTarget "WIMR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3997A571B53DDC300888215 /* Debug */,
+				E3997A581B53DDC300888215 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E3997A591B53DDC300888215 /* Build configuration list for PBXNativeTarget "WIMRTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E3997A5A1B53DDC300888215 /* Debug */,
+				E3997A5B1B53DDC300888215 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		E3997A3A1B53DDC200888215 /* WIMR.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E3997A3B1B53DDC200888215 /* WIMR.xcdatamodel */,
+			);
+			currentVersion = E3997A3B1B53DDC200888215 /* WIMR.xcdatamodel */;
+			path = WIMR.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = E3997A281B53DDC200888215 /* Project object */;
+}
